@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil Saya</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        nav {
+            background: #333;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .profile-container {
+            display: grid;
+            grid-template-columns: 220px 1fr 180px;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .profile-photo {
+            border: 2px solid #999;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+        }
+        .info h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .categories h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .media-section {
+            margin: 25px 0;
+        }
+        .media-section h3 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .video-container {
+            margin-bottom: 20px;
+        }
+        .photo-gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .photo-item {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #999;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .attachments {
+            margin: 25px 0;
+        }
+        .attachments h3 {
+            margin-bottom: 10px;
+        }
+        .attachments ul {
+            list-style: none;
+        }
+        .attachments ul li {
+            margin: 8px 0;
+        }
+        .attachments ul li a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .attachments ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #f0f0f0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Website Profil Saya</h1>
+        <p>Selamat datang di halaman profil pribadi saya</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Galeri</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Profil Utama -->
+    <main>
+        <div class="profile-container">
+            <!-- Foto Diri -->
+            <img class="profile-photo" src="Foto profil.jpg">
+                <span></span>
+                
+            <!-- Biodata Lengkap -->
+            <div class="info">
+                <h1>M. Harits Nawfal R.</h1>
+                <p>Kranji, Indonesia</p>
+                <p>📧 harits@email.com</p>
+                <p>📞 0812-3456-7890</p>
+            </div>
+
+            <!-- Kategori -->
+            <div class="categories">
+                <h3>Kategori</h3>
+                <p>Mahasiswa</p>
+                <p>Teknik Informatika</p>
+                <p>Desain Web</p>
+            </div>
+        </div>
+
+        <!-- Deskripsi Diri -->
+        <article class="content">
+            <p>Halo! Nama saya M. Harits Nawfal R. Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di STT-Terpadu Nurul Fikri. Saya memiliki minat yang besar dalam bidang teknologi, khususnya dalam pengembangan web dan desain antarmuka pengguna. Saya selalu berusaha untuk belajar hal-hal baru dan mengembangkan keterampilan yang saya miliki agar dapat menjadi lebih baik di masa depan.</p>
+            
+            <p>Selama berkuliah, saya berusaha untuk mengembangkan karakter yang baik sekaligus keahlian teknis. Saya percaya bahwa keseimbangan antara pengetahuan dan akhlak sangat penting. Selain belajar, saya juga suka berdiskusi, berbagi pengetahuan, dan bekerja sama dengan teman-teman untuk menyelesaikan berbagai proyek yang menantang.</p>
+        </article>
+
+        <!-- Konten Multimedia: Video & Foto -->
+        <section class="media-section">
+            <h3>🎬 Video Perkenalan</h3>
+            <div class="video-container">
+                <video width="100%" height="300" controls>
+                    <source src="Video perkenalan.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+            </div>
+
+            <h3>📸 Galeri Foto</h3>
+            <div class="photo-gallery">
+                
+                <img class="photo-item" src="Foto1.jpg">Foto 1</div>
+                <img class="photo-item" src="Foto2.jpg">Foto 2
+                </div>
+                <img class="photo-item" src="Foto3.jpg">Foto 3</div>
+                <img class="photo-item" src="Foto4.jpg">Foto 4</div>
+            </div>
+        </section>
+
+        <!-- Lampiran / Download File -->
+        <section class="attachments">
+            <h3>📂 Lampiran & Unduhan</h3>
+            <ul>
+                <li>📄 <a href="cv-saya.pdf" download>Unduh CV Saya</a></li>
+                <li>📝 <a href="tugas-desain-web.pdf" download>Tugas Desain UI/UX</a></li>
+                <li>🖼️ <a href="foto-profil.jpg" download>Unduh Foto Profil</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 M. Harits Nawfal R. — STT-Terpadu Nurul Fikri</p>
+    </footer>
+
+</body>
+</html>
